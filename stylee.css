@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'kumbh sans', sans-serif ;
+
+}
+.section{
+    width: 100%;
+    min-height: 100vh;
+    background-color: #ddd;
+
+}
+#logo{
+
+        padding-left: 25px;
+        width: 4.5rem;
+        fill: #0e2749;
+
+}
+.section .title{
+    display: flex;
+    justify-content: left;
+    padding-left: 0px;
+}
+.container{
+    width: 80%;
+    display: block;
+    margin: auto;
+    padding-top: 100px;
+
+}
+.content{
+    float: left;
+    width: 55%;
+    margin-top: 70px;
+
+}
+.image{
+    float: right;
+    width: 40%;
+    margin-top: 40px;
+
+}
+.image img{
+    width: 70%;
+    height: auto;
+    border-radius: 50px;
+}
+.section .title{
+    text-transform: uppercase;
+    font-size: 28px;
+    color: #0e2749;
+}
+.section .coonte h3{
+    margin-top: 20px;
+    color: #0e2749;
+    font-size: 15px;
+}
+.section .coonte p{
+    margin-top: 10px;
+    font-family: sans-serif;
+    font-size: 13px;
+    line-height: 1.5;
+    color: #0e2749;
+}
+.btn{
+    font-size: 1rem;
+background-image: linear-gradient(to top, #141414 0%, #add 100%);
+padding: 14px 32px;
+border: none;
+border-radius: 4px;
+color: #0e2749;
+margin-top: 2rem;
+cursor: pointer;
+position: relative;
+transition: all 0.25s;
+outline: none;
+}
+.btn a{
+    position: relative;
+    z-index: 2;
+    color: #ffffff;
+    text-decoration: none;
+}
+.btn:after{
+position: absolute;
+content: '';
+top: 0;
+left: 0;
+width: 0;
+height: 100%;
+background: #21416e;
+transition: all 0.25s;
+border-radius: 4px;
+}
+
+.btn:hover{
+color: #ffffff;
+} 
+.btn:hover:after{
+    width: 100%;
+}
+.social{
+    margin-top: 40px;
+}
+.social i{
+    color: #0e2749;
+    font-size: 20px;
+    padding: 0px 7px;
+}
+.social i:hover{
+    color: #21416e;
+}
+@media screen and (max-width: 768px) {
+    .container{
+        width: 80%;
+        display: block;
+        margin: auto;
+        padding-top: 50px;
+        
+    }
+    .section{
+        float: none;
+        width: 100%;
+        display: block;
+        margin: auto;
+    }
+    .image{
+        float: none;
+        width: 70%;
+        display: block;
+        margin: auto;
+    }
+    .section .title{
+        text-align: center;
+        font-size: 19px;
+
+    }
+  .section .content .btn{
+       align-content: center;
+    }
+    .section .content .btn a{
+        text-align: center;
+    }
+    .section .content .social{
+        text-align: center;
+    }
+}
